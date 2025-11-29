@@ -1,0 +1,81 @@
+/* Montserrat */
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/Montserrat/Montserrat-Bold.ttf');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/Montserrat/Montserrat-SemiBold.ttf');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/Montserrat/Montserrat-Medium.ttf');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/Montserrat/Montserrat-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Gilroy */
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../assets/fonts/Gilroy/Gilroy-Bold.ttf');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../assets/fonts/Gilroy/Gilroy-Medium.ttf');
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* Neue Machina */
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('../assets/fonts/NeueMachina/NeueMachina-Ultrabold.ttf');
+    font-style: normal;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('../assets/fonts/NeueMachina/NeueMachina-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Din Comp */
+
+@font-face {
+    font-family: 'Din Comp';
+    src: url('../assets/fonts/DinComp/DinComp-Medium.ttf');
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* Iso Text */
+
+@font-face {
+    font-family: 'Iso Text';
+    src: url('../assets/fonts/IsoText/IsoText-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+
