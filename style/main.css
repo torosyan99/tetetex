@@ -243,8 +243,13 @@ p {
 
 .header__search {
     position: relative;
+    --search-color:#53535C;
 }
 
+
+.header__search:hover {
+    --search-color: var(--orange);
+}
 .header__input {
     width: 100%;
     max-width: 199px;
