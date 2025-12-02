@@ -11,89 +11,21 @@ function addItemsSwiperMob(desktop, itemCss, mobile) {
 }
 
 
-// Our-works slide
 
 
-const ourWorksList = document.querySelector('.our-works__list');
-const ourWorksSwiperMob = document.querySelector('.our-works__swiper');
-addItemsSwiperMob(ourWorksList, '.our-works__item', ourWorksSwiperMob)
 
+// Services accordion
 
-new Swiper('.our-works__swiper', {
-  slidesPerView: 1.2,
-  spaceBetween: 20,
+const servicesList = document.querySelector('.services__list');
+let activeItem = document.querySelector('.services__item--active');
 
-  breakpoints: {
-    580: {
-      slidesPerView: 2.2,
-    },
-    768: {
-      slidesPerView: 3.2,
+servicesList.addEventListener('click', (e) => {
+  const target = e.target;
+  const servicesWrapper = target.closest('.services__wrapper');
 
-    }
+  if(servicesWrapper) {
+    activeItem.classList.remove("services__item--active");
+    activeItem = servicesWrapper.parentElement;
+    activeItem.classList.add("services__item--active");
   }
-})
-
-
-// Cases slide
-
-const casesSwiper = document.querySelector('.cases__swiper');
-const casesSwiperMob = document.querySelector('.cases__swiper-mob');
-const casesCurrent = document.querySelector('.cases__current');
-
-new Swiper(casesSwiper, {
-  clickable: true,
-  spaceBetween: 30,
-  slidesPerView: 1,
-  navigation: {
-    nextEl: '.cases__nav-next',
-    prevEl: '.cases__nav-prev',
-  },
-  on: {
-    init() {
-      casesCurrent.innerHTML = `<span class="cases__active-current"> 1 </span> <div class="cases__line"></div> ${this.slides.length}`
-    },
-    slideChange() {
-      casesCurrent.innerHTML = `<span class="cases__active-current"> ${this.activeIndex + 1}</span>  <div class="cases__line"></div> ${this.slides.length}`
-
-    }
-  }
-})
-
-
-addItemsSwiperMob(casesSwiper, '.cases__item', casesSwiperMob)
-
-
-new Swiper(casesSwiperMob, {
-  clickable: true,
-  spaceBetween: 20,
-  slidesPerView: 1.2,
-  breakpoints: {
-    580: {
-      slidesPerView: 2.2,
-    },
-    768: {
-      slidesPerView: 3.2,
-
-    }
-  }
-})
-
-
-// Import slide
-
-new Swiper('.import__swiper', {
-  clickable: true,
-  slidesPerView: 4,
-
-  breakpoints: {
-    768: {
-      spaceBetween: 20,
-    }
-  },
-
-  navigation: {
-    nextEl: '.import__nav-next',
-    prevEl: '.import__nav-prev',
-  },
 })

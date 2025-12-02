@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" href="lib/swiper/swiper.min.css"/>
+
+	<link rel="stylesheet" href="style/fonts.css"/>
+	<link rel="stylesheet" href="style/reset.css"/>
+	<link rel="stylesheet" href="style/main.css"/>
+	<link rel="stylesheet" href="style/pages/company.css"/>
+
+	<script src="lib/swiper/swiper.min.js" defer></script>
+	<script src="js/pages/company.js" defer></script>
+	<title>Document</title>
+</head>
+<body>
+<header class="header">
+	<div class="container header__container">
+		<div class="header__content">
+			<a class="header__logo" href="/">
+				<img class="header__logo-img" src="assets/images/logo.svg" alt="logo"/>
+			</a>
+			<button class="button header__catalog-button">Каталог</button>
+			<div class="header__menu">
+				<div class="header__box">
+					<nav class="header__nav">
+						<a class="header__link" href="#">Технические требования</a>
+						<a class="header__link" href="#">Доставка и оплата</a>
+						<a class="header__link" href="#">Контакты</a>
+					</nav>
+					<div class="header__wrapper">
+						<a class="header__phone" href="tel:79219569443">+7 (921) 956 94 43</a>
+						<div class="header__search search">
+							<input class="header__search-input search__input" placeholder="Поиск..." type="text">
+							<button class="header__search-button search__button">
+								<svg width="21" height="22">
+									<use xlink:href="assets/images/icons.svg#search"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__lang">
+				<span class="header__active-lang">RU</span>
+				<span>|</span>
+				<button class="header__lang-button">EN</button>
+			</div>
+		</div>
+	</div>
+</header>
+
+<main class="main">
+	<div class="breadcrumbs">
+		<div class="container breadcrumbs__inner">
+			<a class="breadcrumbs__link" href="/">Главаня</a>
+			<span>></span>
+			<span class="breadcrumbs__active">О компании</span>
+		</div>
+	</div>
+
+	<section class="about line-bg">
+		<div class="container about__container">
+			<h2 class="title about__title">О КОМПАНИИ</h2>
+
+			<picture>
+				<source srcset="assets/images/backs/back-5-m.png" media="(max-width: 560px)"/>
+				<img class="left-back about__back about__left-back" src="assets/images/backs/back-5.png" alt="img"/>
+			</picture>
+			<picture>
+				<source srcset="assets/images/backs/back-5-m.png" media="(max-width: 560px)"/>
+				<img class="right-back about__back" src="assets/images/backs/back-5.png" alt="img"/>
+			</picture>
+			<div class="about__box">
+				<div class="about__wrapper">
+					<img src="assets/images/img.png" alt="img"/>
+					<div class="about__inner">
+						<h3 class="about__subtitle">миссия, производство, команда</h3>
+						<p class="about__text">
+							<span>TETATEX</span> – российская компания, специализирующаяся на разработке и производстве
+							импортозамещающих
+							электроприборов и электронных компонентов. Наша цель – создавать высокотехнологичные,
+							надежные и
+							доступные решения, которые снижают зависимость отечественной промышленности и потребителей
+							от
+							иностранных поставщиков.
+						</p>
+						<p class="about__text">
+							<span>Миссия</span> – Мы стремимся обеспечить технологический суверенитет России,
+							предлагая инновационные продукты, которые не уступают, а в некоторых аспектах превосходят
+							зарубежные аналоги. Наша работа направлена на укрепление ключевых отраслей экономики,
+							включая
+							энергетику, медицину, промышленность и бытовую электронику.
+						</p>
+					</div>
+				</div>
+				<div class="about__box-bottom">
+					<ul class="socials about__socials">
+						<li class="socials__item">
+							<a class="socials__link" href="#">
+								<svg width="31" height="31">
+									<use xlink:href="assets/images/icons.svg#wp"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="socials__item">
+							<a class="socials__link" href="#">
+								<svg width="31" height="31">
+									<use xlink:href="assets/images/icons.svg#tg"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="socials__item">
+							<a class="socials__link" href="#">
+								<svg width="31" height="31">
+									<use xlink:href="assets/images/icons.svg#viber"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+
+					<div class="about__buttons">
+						<a class="button-transparent-2 about__contact" href="#">свзяатся с нами</a>
+						<a class="button-transparent-2 about__link" href="#">Космос: tetatex.space</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="about__bottom">
+				<div class="about__period">
+					<span>2010</span>
+					<svg width="305" height="69">
+						<use xlink:href="assets/images/icons.svg#period-start"></use>
+					</svg>
+					<div class="about__period-line"></div>
+					<span>2025</span>
+					<svg width="305" height="69">
+						<use xlink:href="assets/images/icons.svg#period-end"></use>
+					</svg>
+				</div>
+
+				<ul class="about__list">
+					<li class="about__item">
+						<p class="about__item-text">
+							Российская инженерная компания, разрабатывающая и производящая датчики скорости вращения,
+							ветра
+							и
+							вибрации для промышленных и научных систем.
+						</p>
+					</li>
+					<li class="about__item">
+						<p class="about__item-text">
+
+							Наша цель — полное импортозамещение решений Ai-Tek, Jaquet, FirstSensor и других западных
+							брендов.
+						</p>
+					</li>
+					<li class="about__item">
+						<p class="about__item-text">
+							Производим, тестируем и внедряем в России. Готовы к крупным поставкам и кастомизации под
+							задачи заказчика.
+						</p>
+					</li>
+				</ul>
+
+				<ul class="socials about__socials">
+					<li class="socials__item">
+						<a class="socials__link" href="#">
+							<svg width="26" height="26">
+								<use xlink:href="assets/images/icons.svg#fb"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="socials__item">
+						<a class="socials__link" href="#">
+							<svg width="26" height="26">
+								<use xlink:href="assets/images/icons.svg#inst"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="socials__item">
+						<a class="socials__link" href="#">
+							<svg width="26" height="26">
+								<use xlink:href="assets/images/icons.svg#b"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class="our-photos">
+		<div class="container">
+			<h2 class="title our-photos__title">
+				НАши ФОТО
+			</h2>
+			<p class="our-photos__text">
+				В основе TETATEX – команда опытных инженеров, разработчиков и технологов, объединенных общей идеей
+				технологического прорыва. Мы сочетаем глубокие знания в микроэлектронике, энергетике и автоматизации с
+				гибким подходом к решению сложных задач. Наши специалисты постоянно совершенствуют продукты, внедряя
+				передовые разработки и учитывая потребности рынка.
+			</p>
+
+			<div class="our-photos__slider">
+				<div class="our-photos__swiper swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="card card--white">
+								<div class="shape"></div>
+								<span class="card__top">Директор</span>
+								<p class="card__name">Петров Максим</p>
+								<img class="card__img" src="assets/images/person-1.png" alt="person"/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card card--white">
+								<div class="shape"></div>
+								<span class="card__top">Директор</span>
+								<p class="card__name">Петров Максим</p>
+								<img class="card__img" src="assets/images/person-1.png" alt="person"/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card card--white">
+								<div class="shape"></div>
+								<span class="card__top">Директор</span>
+								<p class="card__name">Петров Максим</p>
+								<img class="card__img" src="assets/images/person-1.png" alt="person"/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card card--white">
+								<div class="shape"></div>
+								<span class="card__top">Директор</span>
+								<p class="card__name">Петров Максим</p>
+								<img class="card__img" src="assets/images/person-1.png" alt="person"/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card card--white">
+								<div class="shape"></div>
+								<span class="card__top">Директор</span>
+								<p class="card__name">Петров Максим</p>
+								<img class="card__img" src="assets/images/person-1.png" alt="person"/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card card--white">
+								<div class="shape"></div>
+								<span class="card__top">Директор</span>
+								<p class="card__name">Петров Максим</p>
+								<img class="card__img" src="assets/images/person-1.png" alt="person"/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card card--white">
+								<div class="shape"></div>
+								<span class="card__top">Директор</span>
+								<p class="card__name">Петров Максим</p>
+								<img class="card__img" src="assets/images/person-1.png" alt="person"/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card card--white">
+								<div class="shape"></div>
+								<span class="card__top">Директор</span>
+								<p class="card__name">Петров Максим</p>
+								<img class="card__img" src="assets/images/person-1.png" alt="person"/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card card--white">
+								<div class="shape"></div>
+								<span class="card__top">Директор</span>
+								<p class="card__name">Петров Максим</p>
+								<img class="card__img" src="assets/images/person-1.png" alt="person"/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card card--white">
+								<div class="shape"></div>
+								<span class="card__top">Директор</span>
+								<p class="card__name">Петров Максим</p>
+								<img class="card__img" src="assets/images/person-1.png" alt="person"/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card card--white">
+								<div class="shape"></div>
+								<span class="card__top">Директор</span>
+								<p class="card__name">Петров Максим</p>
+								<img class="card__img" src="assets/images/person-1.png" alt="person"/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card card--white">
+								<div class="shape"></div>
+								<span class="card__top">Директор</span>
+								<p class="card__name">Петров Максим</p>
+								<img class="card__img" src="assets/images/person-1.png" alt="person"/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card card--white">
+								<div class="shape"></div>
+								<span class="card__top">Директор</span>
+								<p class="card__name">Петров Максим</p>
+								<img class="card__img" src="assets/images/person-1.png" alt="person"/>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="our-photos__bottom">
+					<div class="swiper-scrollbar our-photos__scrollbar"></div>
+					<div class="slide-current our-photos__current"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="points">
+		<div class="container points__inner">
+			<h2 class="title">основные пункты разработки</h2>
+			<ul class="points__list">
+				<li class="points__item">
+					<h5 class="points__name">Производство в России</h5>
+					<div class="points__wrapper">
+						<div class="points__num">01</div>
+						<div class="points__box">
+							<picture>
+								<source srcset="assets/images/points-img-m-1.png" media="(max-width:900px)"/>
+								<img src="assets/images/points-img-1.png" alt="points-img"/>
+							</picture>
+						</div>
+					</div>
+				</li>
+				<li class="points__item">
+					<div class="points__wrapper">
+						<div class="points__box">
+							<picture>
+								<source srcset="assets/images/points-img-m-2.png" media="(max-width:900px)"/>
+								<img src="assets/images/points-img-2.png" alt="points-img"/>
+							</picture>
+						</div>
+						<div class="points__num">02</div>
+					</div>
+					<h5 class="points__name">Импортозамещение</h5>
+				</li>
+				<li class="points__item">
+					<h5 class="points__name">Гибкость под систему заказчика</h5>
+					<div class="points__wrapper">
+						<div class="points__num">03</div>
+						<div class="points__box">
+							<picture>
+								<source srcset="assets/images/points-img-m-3.png" media="(max-width:900px)"/>
+								<img src="assets/images/points-img-3.png" alt="points-img"/>
+							</picture>
+						</div>
+					</div>
+				</li>
+				<li class="points__item">
+					<div class="points__wrapper">
+						<div class="points__box">
+							<picture>
+								<source srcset="assets/images/points-img-m-4.png" media="(max-width:900px)"/>
+								<img src="assets/images/points-img-4.png" alt="points-img"/>
+							</picture>
+						</div>
+						<div class="points__num">04</div>
+					</div>
+					<h5 class="points__name">Высокая точность</h5>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="our-project">
+		<div class="container">
+			<div class="our-project__top">
+				<h2 class="title our-project__title">
+				<span>
+				Наш  проект<span class="our-project__inner-title"> Tetatex.space </span>
+
+				</span>
+				</h2>
+				<h4 class="our-project__subtitle">
+					БЮРО КОСМИЧЕСКИХ И ПЕРСПЕКТИВНЫХ ТЕХНОЛОГИЙ
+				</h4>
+			</div>
+
+			<picture>
+				<source media="(max-width: 560px)" srcset="assets/images/our-project-m-img.png"/>
+				<img class="our-project__img" src="assets/images/our-project-img.png" alt="our-project-img"/>
+			</picture>
+			<ul class="our-project__list">
+				<li class="our-project__item">
+					<div class="shape our-project__shape"></div>
+					<h5 class="our-project__name">ТЕЛЕГРАМ КАНАЛ ПО КОЛОНИЗАЦИИ СОЛНЕЧНОЙ СИСТЕМЫ</h5>
+					<div class="our-project__line"></div>
+					<p class="our-project__text">Исключительно научно-технический информационный ресурс с узкой
+						тематикой по колонизации солнечной
+						системы</p>
+				</li>
+				<li class="our-project__item">
+					<div class="shape our-project__shape"></div>
+					<h5 class="our-project__name">МНОГОРАЗОВАЯ ПЛАТФОРМА ПЕРВОЙ СТУПЕНИ РАКЕТО-НОСИТЕЛЯ</h5>
+					<div class="our-project__line"></div>
+					<p class="our-project__text">Предлагается совершенно новый и ОРИГИНАЛЬНЫЙ подход к конструкции
+						первой ступени ракет-носителей. Это позволит не только легко получить многоразовость первой
+						ступени носителя, но и от 4 до 10 раз увеличить грузоподъемность или азимутальную скорость блока
+						второй ступени.</p>
+				</li>
+				<li class="our-project__item">
+					<div class="shape our-project__shape"></div>
+					<h5 class="our-project__name">Беспилотная грузовая авиакомпания</h5>
+					<div class="our-project__line"></div>
+					<p class="our-project__text">Исключительно научно-технический информационный ресурс с узкой
+						тематикой по колонизации солнечной системы</p>
+				</li>
+				<li class="our-project__item">
+					<div class="shape our-project__shape"></div>
+					<h5 class="our-project__name">Метод швартовки космических зондов к малым небесным телам</h5>
+					<div class="our-project__line"></div>
+					<p class="our-project__text">Сегодня, когда внимание многих приковано к событиям, связанным с
+						посадками научно‑исследовательских космических станций на поверхность Луны</p>
+				</li>
+				<li class="our-project__item">
+					<div class="shape our-project__shape"></div>
+					<h5 class="our-project__name">УНИВЕРСАЛЬНЫЙ КОСМИЧЕСКИЙ КАЛЕНДАРЬ МЕНДЕЛЕЕВА — МОРОЗОВА</h5>
+					<div class="our-project__line"></div>
+					<p class="our-project__text">Астроцентрический универсальный, единый, фиксированный стандартный
+						13-месячный эталонный календарь, базирующийся на строгой цифровой математической основе и не
+						связанный с общепринятыми геоцентрическими аналоговыми моделями движения Земли вокруг Солнца
+						системы</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+</main>
+
+<footer class="footer">
+	<div class="footer__container">
+		<div class="contacts footer__contacts">
+			<div class="contacts__box">
+				<h2 class="title contacts__title">Контакты</h2>
+				<div class="contacts__wrapper">
+					<a class="contacts__phone" href="tel:79219569443">+7 (921) 956 94 43</a>
+					<img class="contacts__img" src="assets/images/img-2.png" alt="img"/>
+					<a class="contacts__mail" href="mailto:info@company.ru">info@company.ru</a>
+					<p class="contacts__rights">
+						© Адрес: г. Тюмень, ул. Николая Зелинского, 1 тел. 8-3452-500-154 8-958-152-03-55 ООО «КАРС»
+						2022
+					</p>
+					<div class="contacts__flex">
+						<ul class="socials contacts__bottom-socials">
+							<li class="socials__item">
+								<a class="socials__link" href="#">
+									<svg width="26" height="26">
+										<use xlink:href="assets/images/icons.svg#fb-2"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="socials__item">
+								<a class="socials__link" href="#">
+									<svg width="26" height="26">
+										<use xlink:href="assets/images/icons.svg#inst-2"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="socials__item">
+								<a class="socials__link" href="#">
+									<svg width="26" height="26">
+										<use xlink:href="assets/images/icons.svg#b-2"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+						<ul class="socials contacts__socials">
+							<li class="socials__item">
+								<a class="socials__link" href="#">
+									<svg width="31" height="31">
+										<use xlink:href="assets/images/icons.svg#wp"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="socials__item">
+								<a class="socials__link" href="#">
+									<svg width="31" height="31">
+										<use xlink:href="assets/images/icons.svg#tg"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="socials__item">
+								<a class="socials__link" href="#">
+									<svg width="31" height="31">
+										<use xlink:href="assets/images/icons.svg#viber"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+				<div class="contacts__right">
+					<img class="contacts__radar" src="assets/images/radar.png" alt="radar"/>
+					<p class="contacts__right-rights">© ООО «Правообладатель контента», 2010—2015</p>
+				</div>
+			</div>
+			<form class="contacts__form">
+				<div class="contacts__form-top">
+					<h4>Написать нам</h4>
+					<svg width="54" height="54">
+						<use xlink:href="assets/images/icons.svg#remove"></use>
+					</svg>
+				</div>
+
+				<div class="contacts__form-item">
+					<div class="contacts__icon">
+						<svg width="24" height="24">
+							<use xlink:href="assets/images/icons.svg#form-name"></use>
+						</svg>
+					</div>
+					<input class="contacts__input" name="name" placeholder="Имя"/>
+				</div>
+				<div class="contacts__form-item">
+					<div class="contacts__icon">
+						<svg width="24" height="24">
+							<use xlink:href="assets/images/icons.svg#form-mail"></use>
+						</svg>
+					</div>
+					<input class="contacts__input" name="email" placeholder="Почта"/>
+				</div>
+				<div class="contacts__form-item">
+					<textarea class="contacts__input" name="email" placeholder="Введите текст"></textarea>
+				</div>
+				<p class="contacts__form-text">
+					Кликая по кнопке “Записаться” вы соглашаетесь на обработку персональных данных!
+				</p>
+
+				<button class="button contacts__form-button" type="submit">Отправить</button>
+			</form>
+		</div>
+		<div class="footer__box">
+			<nav class="footer__nav">
+				<div class="footer__wrapper">
+					<p class="footer__wrapper-top">Технические требования</p>
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a class="footer__link" href="#">Техническая документация</a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#">Документооборот</a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#">Презентация</a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#">Рекламное производство</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__wrapper">
+					<p class="footer__wrapper-top">Доставка и оплата</p>
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a class="footer__link" href="#">Доставка</a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#">Оплата</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__wrapper">
+					<p class="footer__wrapper-top">Контакты</p>
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a class="footer__link" href="#">На карте</a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#">Адреса</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<img class="footer__img" src="assets/images/img-3.png" alt="img"/>
+			<div class="footer__right">
+				<a class="footer__phone" href="tel:73452500154">+7 (3452) 500-154</a>
+				<a class="footer__mail" href="mailto:info@company.ru">info@company.ru</a>
+			</div>
+		</div>
+		<div class="footer__rights">
+			© ООО «Правообладатель контента», 2010—2015
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+.all-import__list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+@media (max-width: 1220px) {
+   .all-import__list {
+       grid-template-columns: repeat(3, 1fr);
+   }
+}
+
+@media (max-width: 768px) {
+
+    .all-import {
+        padding-top: 30px;
+    }
+    .all-import__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .all-import__shape {
+        display: none;
+    }
+
+    .all-import__link {
+        padding: 8px 11px;
+    }
+
+    .all-import__name {
+        min-height: auto;
+        font-size: 15px;
+    }
+
+    .all-import__img {
+        display: block;
+        width: 134px;
+        height: 94px;
+        margin: 10px auto 0;
+    }
+
+}

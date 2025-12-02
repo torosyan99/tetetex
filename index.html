@@ -5,15 +5,17 @@
 	<meta name="viewport"
 	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+	
 	<link rel="stylesheet" href="lib/swiper/swiper.min.css"/>
-
+	
 	<link rel="stylesheet" href="style/fonts.css"/>
 	<link rel="stylesheet" href="style/reset.css"/>
 	<link rel="stylesheet" href="style/main.css"/>
+	<link rel="stylesheet" href="style/pages/homepage.css"/>
 
 	<script src="lib/swiper/swiper.min.js" defer></script>
 	<script src="js/main.js" defer></script>
+	<script src="js/pages/homepage.js" defer></script>
 	<title>Document</title>
 </head>
 <body>
@@ -34,9 +36,9 @@
 					</nav>
 					<div class="header__wrapper">
 						<a class="header__phone" href="tel:79219569443">+7 (921) 956 94 43</a>
-						<div class="header__search">
-							<input class="header__input" placeholder="Поиск..." type="text">
-							<button class="header__search-button">
+						<div class="header__search search">
+							<input class="header__search-input search__input" placeholder="Поиск..." type="text">
+							<button class="header__search-button search__button">
 								<svg width="21" height="22">
 									<use xlink:href="assets/images/icons.svg#search"></use>
 								</svg>
@@ -55,7 +57,7 @@
 </header>
 
 <main class="main">
-
+	
 	<section class="top">
 		<div class="container top__container">
 			<h1 class="top__title">
@@ -65,7 +67,7 @@
 				<p class="top__text">
 					Разработка и производство датчиков для турбин, транспорта и промышленности
 				</p>
-
+				
 				<button class="button-transparent top__button">
 					Cвзаться с инженером
 				</button>
@@ -109,81 +111,83 @@
 					<p class="top__wrapper-text">Импортозамещающие решения для турбин.</p>
 				</div>
 			</div>
-
+		
 		</div>
 	</section>
-
+	
 	<section class="our-works">
 		<div class="container">
 			<picture>
-				<source srcset="assets/images/back-1-m.png" media="(max-width: 560px)"/>
-				<img class="right-back our-works__back" src="assets/images/back-1.png" alt="img"/>
+				<source srcset="assets/images/backs/back-1-m.png" media="(max-width: 560px)"/>
+				<img class="right-back our-works__back" src="assets/images/backs/back-1.png" alt="img"/>
 			</picture>
 			<h2 class="title our-works__title">Наши разработки</h2>
 			<div class="our-works__list">
-				<div class="our-works__item">
-					<div class="shape our-works__shape"></div>
-					<span class="our-works__class">Класс детали</span>
-					<p class="our-works__count">Прибор один</p>
-					<img class="our-works__img" alt="our-work-img" src="assets/images/details-s-img-1.png"/>
+				<div class="card card--white our-works__item">
+					<div class="shape"></div>
+					<span class="card__top">Класс детали</span>
+					<p class="card__name">Прибор один</p>
+					<img class="card__img" alt="our-work-img" src="assets/images/details-s-img-1.png"/>
 				</div>
-				<div class="our-works__item">
-					<div class="shape our-works__shape"></div>
-					<span class="our-works__class">Класс детали</span>
-					<p class="our-works__count">Прибор один</p>
-					<img class="our-works__img" alt="our-work-img" src="assets/images/details-s-img-1.png"/>
+				<div class="card card--white our-works__item">
+					<div class="shape"></div>
+					<span class="card__top">Класс детали</span>
+					<p class="card__name">Прибор один</p>
+					<img class="card__img" alt="our-work-img" src="assets/images/details-s-img-1.png"/>
 				</div>
-				<div class="our-works__item">
-					<div class="shape our-works__shape"></div>
-					<span class="our-works__class">Класс детали</span>
-					<p class="our-works__count">Прибор один</p>
-					<img class="our-works__img" alt="our-work-img" src="assets/images/details-s-img-1.png"/>
+				<div class="card card--white our-works__item">
+					<div class="shape"></div>
+					<span class="card__top">Класс детали</span>
+					<p class="card__name">Прибор один</p>
+					<img class="card__img" alt="our-work-img" src="assets/images/details-s-img-1.png"/>
 				</div>
-				<div class="our-works__item">
-					<div class="shape our-works__shape"></div>
-					<span class="our-works__class">Класс детали</span>
-					<p class="our-works__count">Прибор один</p>
-					<img class="our-works__img" alt="our-work-img" src="assets/images/details-s-img-1.png"/>
+				<div class="card card--white our-works__item">
+					<div class="shape"></div>
+					<span class="card__top">Класс детали</span>
+					<p class="card__name">Прибор один</p>
+					<img class="card__img" alt="our-work-img" src="assets/images/details-s-img-1.png"/>
 				</div>
-				<div class="our-works__item">
-					<div class="shape our-works__shape"></div>
-					<span class="our-works__class">Класс детали</span>
-					<p class="our-works__count">Прибор один</p>
-					<img class="our-works__img" alt="our-work-img" src="assets/images/details-s-img-1.png"/>
+				<div class="card card--white our-works__item">
+					<div class="shape"></div>
+					<span class="card__top">Класс детали</span>
+					<p class="card__name">Прибор один</p>
+					<img class="card__img" alt="our-work-img" src="assets/images/details-s-img-1.png"/>
 				</div>
-				<div class="our-works__item">
-					<div class="shape our-works__shape"></div>
-					<span class="our-works__class">Класс детали</span>
-					<p class="our-works__count">Прибор один</p>
-					<img class="our-works__img" alt="our-work-img" src="assets/images/details-s-img-1.png"/>
+				<div class="card card--white our-works__item">
+					<div class="shape"></div>
+					<span class="card__top">Класс детали</span>
+					<p class="card__name">Прибор один</p>
+					<img class="card__img" alt="our-work-img" src="assets/images/details-s-img-1.png"/>
 				</div>
-				<div class="our-works__item">
-					<div class="shape our-works__shape"></div>
-					<span class="our-works__class">Класс детали</span>
-					<p class="our-works__count">Прибор один</p>
-					<img class="our-works__img" alt="our-work-img" src="assets/images/details-s-img-1.png"/>
+				<div class="card card--white our-works__item">
+					<div class="shape"></div>
+					<span class="card__top">Класс детали</span>
+					<p class="card__name">Прибор один</p>
+					<img class="card__img" alt="our-work-img" src="assets/images/details-s-img-1.png"/>
 				</div>
-				<div class="our-works__item">
-					<div class="shape our-works__shape"></div>
-					<span class="our-works__class">Класс детали</span>
-					<p class="our-works__count">Прибор один</p>
-					<img class="our-works__img" alt="our-work-img" src="assets/images/details-s-img-1.png"/>
+				<div class="card card--white our-works__item">
+					<div class="shape"></div>
+					<span class="card__top">Класс детали</span>
+					<p class="card__name">Прибор один</p>
+					<img class="card__img" alt="our-work-img" src="assets/images/details-s-img-1.png"/>
 				</div>
 			</div>
 			<div class="our-works__swiper">
 				<div class="swiper-wrapper"></div>
 			</div>
-
+			
 			<a class="button our-works__button">Весь Каталог</a>
 		</div>
 	</section>
-
+	
 	<section class="about line-bg">
 		<div class="container about__container">
 			<h2 class="title about__title">О КОМПАНИИ</h2>
-			<div class="about__wrapper">
-				<img src="assets/images/img.png" alt="img"/>
-				<h3 class="about__subtitle">Импортозамещающие решения для турбин, приводов и научных систем</h3>
+			<div class="about__box">
+				<div class="about__wrapper">
+					<img src="assets/images/img.png" alt="img"/>
+					<h3 class="about__subtitle">Импортозамещающие решения для турбин, приводов и научных систем</h3>
+				</div>
 				<div class="about__buttons">
 					<a class="button-transparent-2 about__contact" href="#">свзяатся с нами</a>
 					<a class="button-white about__link" href="#">Подробнее</a>
@@ -202,7 +206,7 @@
 						<use xlink:href="assets/images/icons.svg#period-end"></use>
 					</svg>
 				</div>
-
+				
 				<ul class="about__list">
 					<li class="about__item">
 						<p class="about__item-text">
@@ -214,7 +218,7 @@
 					</li>
 					<li class="about__item">
 						<p class="about__item-text">
-
+							
 							Наша цель — полное импортозамещение решений Ai-Tek, Jaquet, FirstSensor и других западных
 							брендов.
 						</p>
@@ -226,7 +230,7 @@
 						</p>
 					</li>
 				</ul>
-
+				
 				<ul class="socials about__socials">
 					<li class="socials__item">
 						<a class="socials__link" href="#">
@@ -250,22 +254,22 @@
 						</a>
 					</li>
 				</ul>
-
+			
 			</div>
-
+		
 		</div>
-
+	
 	</section>
-
+	
 	<section class="cases">
 		<div class="container">
-
+			
 			<picture>
-				<source srcset="assets/images/back-2-m.png" media="(max-width: 560px)"/>
-				<img class="left-back cases__back" src="assets/images/back-2.png" alt="img"/>
+				<source srcset="assets/images/backs/back-2-m.png" media="(max-width: 560px)"/>
+				<img class="left-back cases__back" src="assets/images/backs/back-2.png" alt="img"/>
 			</picture>
 			<h2 class="title cases__title">Кейсы / Примеры <br/> внедрений</h2>
-
+			
 			<div class="cases__swiper swiper">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
@@ -284,7 +288,7 @@
 									<source srcset="assets/images/details-s-img-1.png" media="(max-width: 900px)"/>
 									<img class="cases__img" src="assets/images/details-img-1.png" alt="cases-img"/>
 								</picture>
-
+							
 							</div>
 							<ul class="cases__list">
 								<li class="cases__list-item">
@@ -480,7 +484,7 @@
 									</div>
 								</div>
 								<img class="cases__img" src="assets/images/details-img-1.png" alt="cases-img"/>
-
+							
 							</div>
 							<ul class="cases__list">
 								<li class="cases__list-item">
@@ -527,7 +531,7 @@
 									</div>
 								</div>
 								<img class="cases__img" src="assets/images/details-img-1.png" alt="cases-img"/>
-
+							
 							</div>
 							<ul class="cases__list">
 								<li class="cases__list-item">
@@ -576,7 +580,7 @@
 									</div>
 								</div>
 								<img class="cases__img" src="assets/images/details-img-1.png" alt="cases-img"/>
-
+							
 							</div>
 							<ul class="cases__list">
 								<li class="cases__list-item">
@@ -623,7 +627,7 @@
 									</div>
 								</div>
 								<img class="cases__img" src="assets/images/details-img-1.png" alt="cases-img"/>
-
+							
 							</div>
 							<ul class="cases__list">
 								<li class="cases__list-item">
@@ -670,7 +674,7 @@
 									</div>
 								</div>
 								<img class="cases__img" src="assets/images/details-img-1.png" alt="cases-img"/>
-
+							
 							</div>
 							<ul class="cases__list">
 								<li class="cases__list-item">
@@ -724,22 +728,22 @@
 							<use xlink:href="assets/images/icons.svg#slide-next"></use>
 						</svg>
 					</button>
-					<div class="cases__current"></div>
+					<div class="slide-current cases__current"></div>
 				</div>
 			</div>
-
+		
 		</div>
 	</section>
-
+	
 	<section class="import line-bg">
 		<div class="container import__container">
 			<picture>
-				<source srcset="assets/images/back-3-m.png" media="(max-width: 560px)"/>
-				<img class="right-back import__back" src="assets/images/back-3.png" alt="img"/>
+				<source srcset="assets/images/backs/back-3-m.png" media="(max-width: 560px)"/>
+				<img class="right-back import__back" src="assets/images/backs/back-3.png" alt="img"/>
 			</picture>
-
+			
 			<h2 class="title import__title">Импортозамещение</h2>
-
+			
 			<div class="import__content">
 				<div class="import__swiper swiper">
 					<div class="swiper-wrapper">
@@ -754,7 +758,7 @@
 									<span class="import__class">Класс прибора</span>
 									<h4 class="import__name">Т-Ветер</h4>
 								</div>
-								<img class="import__img" src="assets/images/details-m-img-1.png" alt="detail"/>
+								<img class="import__img" src="assets/images/details-m-img-2.png" alt="detail"/>
 								<p class="import__text">
 									Турбина соответсвует стандартам импортозамещающей, удалось поднять кпд и снизить
 									затраты
@@ -774,7 +778,7 @@
 									<span class="import__class">Класс прибора</span>
 									<h4 class="import__name">Т-Ветер</h4>
 								</div>
-								<img class="import__img" src="assets/images/details-m-img-1.png" alt="detail"/>
+								<img class="import__img" src="assets/images/details-m-img-2.png" alt="detail"/>
 								<p class="import__text">
 									Турбина соответсвует стандартам импортозамещающей, удалось поднять кпд и снизить
 									затраты
@@ -794,7 +798,7 @@
 									<span class="import__class">Класс прибора</span>
 									<h4 class="import__name">Т-Ветер</h4>
 								</div>
-								<img class="import__img" src="assets/images/details-m-img-1.png" alt="detail"/>
+								<img class="import__img" src="assets/images/details-m-img-2.png" alt="detail"/>
 								<p class="import__text">
 									Турбина соответсвует стандартам импортозамещающей, удалось поднять кпд и снизить
 									затраты
@@ -814,7 +818,7 @@
 									<span class="import__class">Класс прибора</span>
 									<h4 class="import__name">Т-Ветер</h4>
 								</div>
-								<img class="import__img" src="assets/images/details-m-img-1.png" alt="detail"/>
+								<img class="import__img" src="assets/images/details-m-img-2.png" alt="detail"/>
 								<p class="import__text">
 									Турбина соответсвует стандартам импортозамещающей, удалось поднять кпд и снизить
 									затраты
@@ -834,7 +838,7 @@
 									<span class="import__class">Класс прибора</span>
 									<h4 class="import__name">Т-Ветер</h4>
 								</div>
-								<img class="import__img" src="assets/images/details-m-img-1.png" alt="detail"/>
+								<img class="import__img" src="assets/images/details-m-img-2.png" alt="detail"/>
 								<p class="import__text">
 									Турбина соответсвует стандартам импортозамещающей, удалось поднять кпд и снизить
 									затраты
@@ -854,7 +858,7 @@
 									<span class="import__class">Класс прибора</span>
 									<h4 class="import__name">Т-Ветер</h4>
 								</div>
-								<img class="import__img" src="assets/images/details-m-img-1.png" alt="detail"/>
+								<img class="import__img" src="assets/images/details-m-img-2.png" alt="detail"/>
 								<p class="import__text">
 									Турбина соответсвует стандартам импортозамещающей, удалось поднять кпд и снизить
 									затраты
@@ -867,7 +871,7 @@
 				</div>
 			</div>
 		</div>
-
+		
 		<div class="import__bottom">
 			<a class="button import__bottom-button" href="">Перейти в раздел сравнения</a>
 			<div class="import__nav slide-nav">
@@ -884,11 +888,76 @@
 			</div>
 		</div>
 	</section>
-
+	
 	<section class="services">
 		<div class="container">
 			<h2 class="title services__title">Услуги</h2>
 			<ul class="services__list">
+				<li class="services__item">
+					<div class="services__wrapper">
+						<div class="shape services__shape"></div>
+						<h4 class="services__item-title">Реверс-инжиниринг</h4>
+						<p class="services__item-text">Турбина соответсвует стандартам импортозамещающей, удалось
+							поднять
+							кпд и снизить затраты на покупку материалов</p>
+						<div class="services__circle">
+							<svg class="services__plus" width="15" height="15">
+								<use xlink:href="assets/images/icons.svg#plus"></use>
+							</svg>
+							<svg class="services__minus" width="15" height="3">
+								<use xlink:href="assets/images/icons.svg#minus"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="services__box">
+						<picture>
+							<source srcset="assets/images/services-img-m.png" media="(max-width:568px)"/>
+							<img class="services__img" src="assets/images/services-img.png" alt="services-img"/>
+						</picture>
+						<p class="services__text">
+							1 Турбина соответсвует стандартам импортозамещающей, удалось поднять кпд и снизить затраты
+							на
+							покупку материалов, в дальнейшем турбина будет подлежать усовершенствованию.
+						</p>
+						<div class="services__buttons">
+							<a class="button" href="#">Заказать услугу</a>
+							<a class="button-transparent services__box-button" href="#">Подробнее о услугах</a>
+						</div>
+					</div>
+				</li>
+				<li class="services__item">
+					<div class="services__wrapper">
+						<div class="shape services__shape"></div>
+						<h4 class="services__item-title">Реверс-инжиниринг</h4>
+						<p class="services__item-text">Турбина соответсвует стандартам импортозамещающей, удалось
+							поднять
+							кпд и снизить затраты на покупку материалов</p>
+						<div class="services__circle">
+							<svg class="services__plus" width="15" height="15">
+								<use xlink:href="assets/images/icons.svg#plus"></use>
+							</svg>
+							<svg class="services__minus" width="15" height="3">
+								<use xlink:href="assets/images/icons.svg#minus"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="services__box">
+						<picture>
+							<source srcset="assets/images/services-img-m.png" media="(max-width:568px)"/>
+							<img class="services__img" src="assets/images/services-img.png" alt="services-img"/>
+						</picture>
+						<p class="services__text">
+							2 Турбина соответсвует стандартам импортозамещающей, удалось поднять кпд и снизить затраты
+							на
+							покупку материалов, в дальнейшем турбина будет подлежать усовершенствованию.
+						</p>
+						<div class="services__buttons">
+							<a class="button" href="#">Заказать услугу</a>
+							<a class="button-transparent services__box-button" href="#">Подробнее о услугах</a>
+						</div>
+					</div>
+				</li>
+				
 				<li class="services__item services__item--active">
 					<div class="services__wrapper">
 						<div class="shape services__shape"></div>
@@ -896,16 +965,27 @@
 						<p class="services__item-text">Турбина соответсвует стандартам импортозамещающей, удалось
 							поднять
 							кпд и снизить затраты на покупку материалов</p>
+						<div class="services__circle">
+							<svg class="services__plus" width="15" height="15">
+								<use xlink:href="assets/images/icons.svg#plus"></use>
+							</svg>
+							<svg class="services__minus" width="15" height="3">
+								<use xlink:href="assets/images/icons.svg#minus"></use>
+							</svg>
+						</div>
 					</div>
 					<div class="services__box">
-						<img src="assets/images/services-img.png" alt="services-img"/>
+						<picture>
+							<source srcset="assets/images/services-img-m.png" media="(max-width:568px)"/>
+							<img class="services__img" src="assets/images/services-img.png" alt="services-img"/>
+						</picture>
 						<p class="services__text">
 							Турбина соответсвует стандартам импортозамещающей, удалось поднять кпд и снизить затраты на
 							покупку материалов, в дальнейшем турбина будет подлежать усовершенствованию.
 						</p>
 						<div class="services__buttons">
 							<a class="button" href="#">Заказать услугу</a>
-							<a class="button-transparent" href="#">Подробнее о услугах</a>
+							<a class="button-transparent services__box-button" href="#">Подробнее о услугах</a>
 						</div>
 					</div>
 				</li>
@@ -916,52 +996,23 @@
 						<p class="services__item-text">Турбина соответсвует стандартам импортозамещающей, удалось
 							поднять
 							кпд и снизить затраты на покупку материалов</p>
-					</div>
-					<div class="services__box">
-						<img src="assets/images/services-img.png" alt="services-img"/>
-						<p class="services__text">
-							Турбина соответсвует стандартам импортозамещающей, удалось поднять кпд и снизить затраты на
-							покупку материалов, в дальнейшем турбина будет подлежать усовершенствованию.
-						</p>
-						<div class="services__buttons">
-							<a class="button" href="#">Заказать услугу</a>
-							<a class="button-transparent" href="#">Подробнее о услугах</a>
+						<div class="services__circle">
+							<svg class="services__plus" width="15" height="15">
+								<use xlink:href="assets/images/icons.svg#plus"></use>
+							</svg>
+							<svg class="services__minus" width="15" height="3">
+								<use xlink:href="assets/images/icons.svg#minus"></use>
+							</svg>
 						</div>
 					</div>
-				</li>
-
-				<li class="services__item">
-					<div class="services__wrapper">
-						<div class="shape services__shape"></div>
-						<h4 class="services__item-title">Реверс-инжиниринг</h4>
-						<p class="services__item-text">Турбина соответсвует стандартам импортозамещающей, удалось
-							поднять
-							кпд и снизить затраты на покупку материалов</p>
-					</div>
 					<div class="services__box">
-						<img src="assets/images/services-img.png" alt="services-img"/>
+						<picture>
+							<source srcset="assets/images/services-img-m.png" media="(max-width:568px)"/>
+							<img class="services__img" src="assets/images/services-img.png" alt="services-img"/>
+						</picture>
 						<p class="services__text">
-							Турбина соответсвует стандартам импортозамещающей, удалось поднять кпд и снизить затраты на
-							покупку материалов, в дальнейшем турбина будет подлежать усовершенствованию.
-						</p>
-						<div class="services__buttons">
-							<a class="button" href="#">Заказать услугу</a>
-							<a class="button-transparent" href="#">Подробнее о услугах</a>
-						</div>
-					</div>
-				</li>
-				<li class="services__item">
-					<div class="services__wrapper">
-						<div class="shape services__shape"></div>
-						<h4 class="services__item-title">Реверс-инжиниринг</h4>
-						<p class="services__item-text">Турбина соответсвует стандартам импортозамещающей, удалось
-							поднять
-							кпд и снизить затраты на покупку материалов</p>
-					</div>
-					<div class="services__box">
-						<img src="assets/images/services-img.png" alt="services-img"/>
-						<p class="services__text">
-							Турбина соответсвует стандартам импортозамещающей, удалось поднять кпд и снизить затраты на
+							4 Турбина соответсвует стандартам импортозамещающей, удалось поднять кпд и снизить затраты
+							на
 							покупку материалов, в дальнейшем турбина будет подлежать усовершенствованию.
 						</p>
 						<div class="services__buttons">
@@ -971,69 +1022,72 @@
 					</div>
 				</li>
 			</ul>
+
+			<a class="services__bottom-button button" href="#">Подробнее о услугах</a>
+
 		</div>
 	</section>
-
-	<section class="news line-bg">
+	
+	<section class="all-news line-bg">
 		<div class="container">
 			<picture>
-				<source srcset="assets/images/back-4-m.png" media="(max-width: 540px)"/>
-				<img class="left-back news__back" src="assets/images/back-4.png" alt="back"/>
+				<source srcset="assets/images/backs/back-4-m.png" media="(max-width: 540px)"/>
+				<img class="left-back all-news__back" src="assets/images/backs/back-4.png" alt="back"/>
 			</picture>
-
-			<h2 class="title news__title">
+			
+			<h2 class="title all-news__title">
 				Новости и пилоты
 			</h2>
-			<ul class="news__list">
-				<li class="news__item">
-					<img class="news__img" src="assets/images/news-img-1.png" alt="news-img"/>
-					<p class="news__date">2025.03.11</p>
-					<div class="news__wrapper">
+			<ul class="all-news__list">
+				<li class="all-news__item">
+					<img class="all-news__img" src="assets/images/all-news-img-1.png" alt="news-img"/>
+					<p class="all-news__date">2025.03.11</p>
+					<div class="all-news__wrapper">
 						<h5>«Переданы образцы Т-Вибро в Тюмени»</h5>
-						<p class="news__text">Турбина соответсвует стандартам импортозамещающей, удалось поднять кпд и
+						<p class="all-news__text">Турбина соответсвует стандартам импортозамещающей, удалось поднять кпд и
 							снизить затраты на покупку материалов...</p>
 					</div>
-					<a class="button-transparent news__button" href="#">Подробнее</a>
+					<a class="button-transparent all-news__button" href="#">Подробнее</a>
 				</li>
-				<li class="news__item">
-					<img class="news__img" src="assets/images/news-img-1.png" alt="news-img"/>
-					<p class="news__date">2025.03.11</p>
-					<div class="news__wrapper">
+				<li class="all-news__item">
+					<img class="all-news__img" src="assets/images/all-news-img-1.png" alt="news-img"/>
+					<p class="all-news__date">2025.03.11</p>
+					<div class="all-news__wrapper">
 						<h5>«Переданы образцы Т-Вибро в Тюмени»</h5>
-						<p class="news__text">Турбина соответсвует стандартам импортозамещающей, удалось поднять кпд и
+						<p class="all-news__text">Турбина соответсвует стандартам импортозамещающей, удалось поднять кпд и
 							снизить затраты на покупку материалов...</p>
 					</div>
-					<a class="button-transparent news__button" href="#">Подробнее</a>
+					<a class="button-transparent all-news__button" href="#">Подробнее</a>
 				</li>
-				<li class="news__item">
-					<img class="news__img" src="assets/images/news-img-1.png" alt="news-img"/>
-					<p class="news__date">2025.03.11</p>
-					<div class="news__wrapper">
+				<li class="all-news__item">
+					<img class="all-news__img" src="assets/images/all-news-img-1.png" alt="news-img"/>
+					<p class="all-news__date">2025.03.11</p>
+					<div class="all-news__wrapper">
 						<h5>«Переданы образцы Т-Вибро в Тюмени»</h5>
-						<p class="news__text">Турбина соответсвует стандартам импортозамещающей, удалось поднять кпд и
+						<p class="all-news__text">Турбина соответсвует стандартам импортозамещающей, удалось поднять кпд и
 							снизить затраты на покупку материалов...</p>
 					</div>
-					<a class="button-transparent news__button" href="#">Подробнее</a>
+					<a class="button-transparent all-news__button" href="#">Подробнее</a>
 				</li>
-				<li class="news__item">
-					<img class="news__img" src="assets/images/news-img-1.png" alt="news-img"/>
-					<p class="news__date">2025.03.11</p>
-					<div class="news__wrapper">
+				<li class="all-news__item">
+					<img class="all-news__img" src="assets/images/all-news-img-1.png" alt="news-img"/>
+					<p class="all-news__date">2025.03.11</p>
+					<div class="all-news__wrapper">
 						<h5>«Переданы образцы Т-Вибро в Тюмени»</h5>
-						<p class="news__text">Турбина соответсвует стандартам импортозамещающей, удалось поднять кпд и
+						<p class="all-news__text">Турбина соответсвует стандартам импортозамещающей, удалось поднять кпд и
 							снизить затраты на покупку материалов...</p>
 					</div>
-					<a class="button-transparent news__button" href="#">Подробнее</a>
+					<a class="button-transparent all-news__button" href="#">Подробнее</a>
 				</li>
 			</ul>
 		</div>
 	</section>
-
+	
 	<section class="contacts">
 		<div class="container contacts__container">
 			<img class="contacts__left-back" src="assets/images/contacts-left.png" alt="left-back"/>
 			<img class="contacts__right-back" src="assets/images/contacts-left.png" alt="right-back"/>
-			<div class="contacts__top">
+			<div class="contacts__content">
 				<div class="contacts__box">
 					<h2 class="title contacts__title">Контакты</h2>
 					<div class="contacts__wrapper">
@@ -1091,7 +1145,7 @@
 									</a>
 								</li>
 							</ul>
-
+						
 						</div>
 					</div>
 					<div class="contacts__right">
@@ -1106,7 +1160,7 @@
 							<use xlink:href="assets/images/icons.svg#remove"></use>
 						</svg>
 					</div>
-
+					
 					<div class="contacts__form-item">
 						<div class="contacts__icon">
 							<svg width="24" height="24">
@@ -1129,7 +1183,7 @@
 					<p class="contacts__form-text">
 						Кликая по кнопке “Записаться” вы соглашаетесь на обработку персональных данных!
 					</p>
-
+					
 					<button class="button contacts__form-button" type="submit">Отправить</button>
 				</form>
 			</div>
@@ -1140,6 +1194,7 @@
 
 <footer class="footer">
 	<div class="footer__container">
+
 		<div class="footer__box">
 			<nav class="footer__nav">
 				<div class="footer__wrapper">
@@ -1182,7 +1237,7 @@
 					</ul>
 				</div>
 			</nav>
-			<img class="footer__img" src="assets/images/img-3.png" alt="img" />
+			<img class="footer__img" src="assets/images/img-3.png" alt="img"/>
 			<div class="footer__right">
 				<a class="footer__phone" href="tel:73452500154">+7 (3452) 500-154</a>
 				<a class="footer__mail" href="mailto:info@company.ru">info@company.ru</a>

@@ -1,0 +1,49 @@
+.honeywell__search {
+    max-width: 580px;
+    margin-left: auto;
+}
+
+.honeywell__search-input {
+    background: rgba(109, 117, 146, 0.05);
+    box-shadow: 0 0 34.9px 0 rgba(109, 117, 146, 0.10) inset;
+}
+
+.honeywell__search-input::placeholder {
+    max-width: 260px;
+    color: var(--primary-color);
+}
+
+.honeywell__list {
+    margin-top: 60px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+
+@media (max-width: 1220px) {
+    .honeywell__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .honeywell__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer {
+        padding-top: 50px;
+    }
+
+}
+
+@media (max-width: 560px) {
+    .honeywell__list {
+        grid-template-columns: 1fr;
+    }
+    .honeywell__search-input::placeholder {
+        font-size: 11px;
+    }
+}
