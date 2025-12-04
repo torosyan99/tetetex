@@ -1,5 +1,5 @@
 .top {
-    padding-top: 50px;
+    padding-top: 60px;
 }
 
 .top__title {
@@ -9,7 +9,7 @@
 
 .top__content {
     max-width: 822px;
-    margin: 147px auto 0;
+    margin: 80px auto 0;
     display: grid;
     grid-template-columns: repeat(2, auto);
     justify-content: space-between;
