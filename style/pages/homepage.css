@@ -1,5 +1,5 @@
 .top {
-    padding-top: 80px;
+    padding-top: 50px;
 }
 
 .top__title {
@@ -431,7 +431,7 @@
 
 @media (max-width: 768px) {
     .top {
-        padding-top: 44px;
+        padding-top: 20px;
     }
 
     .top__container {
