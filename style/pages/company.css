@@ -3,6 +3,9 @@
 }
 
 
+.about {
+    padding-bottom: 64px;
+}
 
 .about::after {
     top: 140px;
@@ -229,6 +232,11 @@
 
 
 @media (max-width: 900px) {
+
+    .about {
+        padding-bottom: 0px;
+    }
+
     .about__title {
         margin-bottom: 40px;
     }
