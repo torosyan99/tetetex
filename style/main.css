@@ -8,7 +8,6 @@
     --black: #000;
     --button-transition: .3s all ease-in-out;
     --block-transition: .4s all ease-in-out;
-
 }
 
 body {
@@ -19,8 +18,6 @@ body {
     font-size: 15px;
     font-weight: 500;
 }
-
-
 
 svg {
     flex-shrink: 0;
@@ -72,7 +69,7 @@ h6 {
 }
 
 section {
-    padding-top: 300px;
+    padding-top: 150px;
     position: relative;
 }
 
@@ -80,7 +77,6 @@ p {
     line-height: 140%;
     opacity: .8;
 }
-
 
 .container {
     width: 100%;
@@ -132,7 +128,6 @@ p {
     transition: var(--button-transition);
 }
 
-
 .button,
 .button-white {
     font-size: 18px;
@@ -178,7 +173,6 @@ p {
     color: var(--secondary-color);
     border: 3px solid var(--secondary-color);
 }
-
 
 .button-transparent:hover,
 .button-transparent-2:hover {
@@ -275,7 +269,6 @@ p {
     --search-color: #53535C;
 }
 
-
 .search:hover {
     --search-color: var(--orange);
 }
@@ -290,7 +283,6 @@ p {
     font-family: 'Gilroy', sans-serif;
     font-weight: 500;
 }
-
 
 .search__button {
     position: absolute;
@@ -312,12 +304,10 @@ p {
     text-wrap: nowrap;
 }
 
-
 .socials {
     display: flex;
     gap: 10px;
 }
-
 
 .line-bg::after {
     content: "";
@@ -360,7 +350,6 @@ p {
     box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.30) inset;
 }
 
-
 .card--white {
     background-color: var(--secondary-color);
     border: 0;
@@ -378,6 +367,7 @@ p {
 }
 
 .card__img {
+    border-radius: 10px;
     width: 200px;
     height: 139px;
     object-fit: contain;
@@ -385,17 +375,16 @@ p {
 }
 
 .about {
-    padding: 582px 0 73px;
+    padding: 500px 0 200px;
+}
+
+.about::after {
+    top: 200px;
+    bottom: 0;
 }
 
 .about__title {
     padding-left: 258px;
-}
-
-.about::after {
-    top: 289px;
-    bottom: 0;
-    z-index: -1;
 }
 
 .about__container {
@@ -444,7 +433,6 @@ p {
     font-family: "Din Comp", sans-serif;
 }
 
-
 .about__bottom {
     max-width: 1022px;
     margin: 80px auto 0;
@@ -465,7 +453,6 @@ p {
     display: none;
 }
 
-
 .about__buttons {
     gap: 20px 30px;
     justify-content: flex-end;
@@ -481,6 +468,7 @@ p {
 }
 
 .about__list {
+    background-color: var(--page-bg);
     display: flex;
     gap: 30px 90px;
     justify-content: space-between;
@@ -516,7 +504,6 @@ p {
     color: rgba(255, 255, 255, 0.8);
 }
 
-
 .about__text::before {
     content: "";
     width: 11px;
@@ -532,7 +519,6 @@ p {
 .about__text span {
     font-weight: 700;
 }
-
 
 .about__box-bottom {
     display: flex;
@@ -577,11 +563,11 @@ p {
 }
 
 .all-news {
-    padding: 574px 0 194px;
+    padding: 400px 0 200px;
 }
 
 .all-news::after {
-    top: 281px;
+    top: 200px;
     bottom: 0;
 }
 
@@ -606,7 +592,6 @@ p {
     transition: var(--block-transition);
     border-radius: 20px;
     padding-right: 30px;
-
 }
 
 .all-news__item:hover {
@@ -716,7 +701,6 @@ p {
     max-width: 182px;
 }
 
-
 .contacts__form {
     flex-grow: 1;
     padding: 30px 39px;
@@ -815,8 +799,6 @@ textarea.contacts__input {
     font-weight: 700;
 }
 
-
-
 .services__title {
     justify-content: center;
 }
@@ -848,7 +830,6 @@ textarea.contacts__input {
     gap: 20px;
 }
 
-
 .services__wrapper {
     max-width: 300px;
     padding: 44.5px 40px 0;
@@ -866,7 +847,6 @@ textarea.contacts__input {
     padding-bottom: 26.5px;
     border-bottom: 3px solid rgba(255, 255, 255, 0.6);
 }
-
 
 .services__item--active .services__box {
     display: block;
@@ -1104,11 +1084,8 @@ textarea.contacts__input {
         padding-left: 0;
     }
 
-    .about,
-    .import,
     .all-news {
-        padding-top: 300px;
-        padding-bottom: 0;
+        padding: 150px 0 0;
     }
 
     .all-news__list {
@@ -1178,10 +1155,17 @@ textarea.contacts__input {
         order: -1;
     }
 
+    .about {
+        padding: 150px 0 0;
+    }
 
 
     .about__text {
         display: none;
+    }
+
+    .about__list {
+        background: transparent;
     }
 
     .services__wrapper {
@@ -1272,7 +1256,7 @@ textarea.contacts__input {
 
 @media (max-width: 768px) {
     section {
-        padding-top: 150px;
+        padding-top: 100px;
     }
 
     h1 {
@@ -1322,7 +1306,7 @@ textarea.contacts__input {
     }
 
     .about {
-        padding-top: 150px;
+        padding-top: 100px;
     }
 
     .about__subtitle {
@@ -1368,7 +1352,6 @@ textarea.contacts__input {
         align-items: center;
         flex-direction: column;
     }
-
 
     .about__box-bottom {
         width: 100%;
@@ -1457,7 +1440,6 @@ textarea.contacts__input {
 
 
 @media (max-width: 560px) {
-
     .left-back {
         left: auto;
         right: 0;
@@ -1473,7 +1455,6 @@ textarea.contacts__input {
         background: var(--black) url("../assets/images/about-bg-m.png") no-repeat center right / cover;
     }
 
-
     .about__subtitle,
     .about__inner .about__subtitle {
         font-size: 28.341px;
@@ -1484,7 +1465,6 @@ textarea.contacts__input {
     .about__list {
         align-items: flex-start;
     }
-
 
     .all-news__item {
         width: 100%;

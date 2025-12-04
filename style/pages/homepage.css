@@ -1,6 +1,5 @@
-
 .top {
-    padding-top: 105px;
+    padding-top: 80px;
 }
 
 .top__title {
@@ -18,7 +17,6 @@
     gap: 70px 20px;
     position: relative;
 }
-
 
 .top__text {
     max-width: 420px;
@@ -72,7 +70,6 @@
     border-radius: 2px;
 }
 
-
 .top__socials {
     position: absolute;
     right: -33px;
@@ -107,7 +104,6 @@
     bottom: -410px;
 }
 
-
 .our-works__title {
     padding-left: 92px;
 }
@@ -118,12 +114,9 @@
     gap: 20px;
 }
 
-
 .our-works__swiper {
     display: none;
 }
-
-
 
 .our-works__button {
     display: none;
@@ -195,27 +188,22 @@
     gap: 415px;
 }
 
-
-
-
-
-
 .cases__text {
     margin-top: 10px;
 }
 
 .cases__back {
-    bottom: -500px;
-    min-width: 1920px;
+    bottom: -260px;
+    min-width: 1620px;
+    width: 1620px;
 }
 
 .import {
-    padding-top: 584px;
-    padding-bottom: 284px;
+    padding: 400px 0 200px;
 }
 
 .import::after {
-    top: 284px;
+    top: 200px;
     bottom: 0;
 }
 
@@ -254,7 +242,6 @@
 .import__img {
     padding: 0 6px;
 }
-
 
 .import__item {
     display: flex;
@@ -313,21 +300,15 @@
 }
 
 .import__back {
-    min-width: 1715px;
-    bottom: -800px;
+    min-width: 1215px;
+    width: 1215px;
+    bottom: -300px;
 }
-
-.footer {
-    padding-top: 300px;
-}
-
 
 @media (max-width: 1800px) {
-
-
     .cases__back,
     .our-works__back,
-    .news__back,
+    .all-news__back,
     .import__back{
         width: 800px;
         min-width: 800px;
@@ -336,7 +317,7 @@
         bottom: 400px;
     }
 
-    .news__back {
+    .all-news__back {
         bottom: -200px
     }
 
@@ -345,9 +326,8 @@
     }
 
     .import__back {
-        bottom: 400px;
+        bottom: 200px;
     }
-
 }
 
 @media (max-width: 1220px) {
@@ -378,27 +358,15 @@
     .cases__box {
         min-width: 40%;
     }
-
-
-
 }
 
 
 @media (max-width: 900px) {
-
     .top__socials {
         right: 50%;
         transform: translateX(50%);
         top: auto;
         bottom: 0;
-    }
-
-
-    .about,
-    .import,
-    .news {
-        padding-top: 300px;
-        padding-bottom: 0;
     }
 
     .top__wrapper,
@@ -454,7 +422,10 @@
         font-size: 15px;
     }
 
-
+    .import {
+        padding-top: 150px;
+        padding-bottom: 0;
+    }
 }
 
 
@@ -512,8 +483,8 @@
         grid-column: 1 / 2;
     }
 
-    .about, .import, .news {
-        padding-top: 150px;
+      .import {
+        padding-top: 100px;
     }
 
     .import__bottom {
@@ -527,6 +498,7 @@
     .footer {
         padding-top: 10px;
     }
+
 }
 
 @media (max-width: 560px) {

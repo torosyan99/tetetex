@@ -20,8 +20,6 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
-
-
 @media (max-width: 1220px) {
     .honeywell__list {
         grid-template-columns: repeat(3, 1fr);
@@ -43,6 +41,7 @@
     .honeywell__list {
         grid-template-columns: 1fr;
     }
+
     .honeywell__search-input::placeholder {
         font-size: 11px;
     }

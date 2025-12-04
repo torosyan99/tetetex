@@ -44,7 +44,6 @@
     position: relative;
 }
 
-
 .footer__back {
     position: absolute;
     bottom: 0;
@@ -53,7 +52,6 @@
     z-index: -1;
     transform: translateX(-50%);
 }
-
 
 @media (max-width: 1220px) {
     .contacts__bottom {
@@ -73,8 +71,6 @@
     }
 }
 
-
-
 @media (max-width: 768px) {
     .footer {
         padding-top: 10px;
@@ -82,7 +78,6 @@
 }
 
 @media (max-width: 560px) {
-
     .footer__back {
         width: 100%;
         min-width: 380px;
